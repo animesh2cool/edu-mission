@@ -3,13 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About Us - EduVision</title>
+<title>About Us - Your Company Name</title>
 <style>
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
     color: #333;
-    background-color: #f0f8ff; /* Light blue background */
-    line-height: 1.6;
   }
   .container {
     width: 80%;
@@ -17,107 +18,101 @@
     overflow: hidden;
   }
   header {
-    background: #fff;
-    color: #333;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #333 3px solid;
+    background: #005792;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
   }
-  header a {
-    color: #333;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-  }
-  header ul {
-    padding: 0;
-    list-style: none;
-  }
-  header li {
-    display: inline;
-    padding: 0 20px 0 20px;
-  }
-  header #branding {
-    float: left;
-  }
-  header #branding h1 {
+  header h1 {
     margin: 0;
   }
-  header nav {
-    float: right;
-    margin-top: 10px;
+  nav {
+    background: #003d5b;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
   }
-  header .highlight, header .current a {
-    color: #e8491d;
-    font-weight: bold;
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
   }
-  header a:hover {
-    color: #666;
-    font-weight: bold;
+  nav a:hover {
+    opacity: 0.7;
   }
-  .about-section, .mission-section, .vision-section, .team-section, .partners-section {
-    margin: 40px 0;
+  .about-section {
     background: #fff;
     padding: 20px;
-    border-left: 4px solid #e8491d;
+    margin-bottom: 20px;
   }
-  .about-section h1, .mission-section h1, .vision-section h1, .team-section h1, .partners-section h1 {
-    color: #333;
+  .about-section h2, .mission-section h2, .vision-section h2, .team-section h2, .partners-section h2 {
+    color: #005792;
+  }
+  .about-section p, .mission-section p, .vision-section p, .team-section p, .partners-section p {
+    line-height: 1.6;
+  }
+  .team-member {
+    margin-bottom: 20px;
+  }
+  .team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .team-member h3 {
+    margin-top: 10px;
+  }
+  .team-member p {
+    font-size: 0.9em;
   }
   footer {
-    padding: 20px;
+    background: #003d5b;
     color: #fff;
-    background-color: #333;
     text-align: center;
+    padding: 20px 0;
   }
 </style>
 </head>
 <body>
   <header>
-    <div class="container">
-      <div id="branding">
-        <h1>EduVision</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="about.html">About Us</a></li>
-          <!-- Add other navigation links here -->
-        </ul>
-      </nav>
-    </div>
+    <h1>Your Company Name</h1>
   </header>
-
+  <nav>
+    <a href="#about">About Us</a>
+    <a href="#mission">Mission</a>
+    <a href="#vision">Vision</a>
+    <a href="#team">Team</a>
+    <a href="#partners">Partners</a>
+  </nav>
   <div class="container">
-    <section class="about-section">
-      <h1>About Us</h1>
-      <p>We are EduVision, a platform dedicated to empowering students with quality education. Our journey began with a vision to make learning accessible to everyone, everywhere.</p>
+    <section id="about" class="about-section">
+      <h2>About Us</h2>
+      <p>Your company description here.</p>
     </section>
-
-    <section class="mission-section">
-      <h1>Our Mission</h1>
-      <p>To provide a comprehensive educational experience that fosters innovation, creativity, and critical thinking among students.</p>
+    <section id="mission" class="mission-section">
+      <h2>Mission</h2>
+      <p>Your company mission statement here.</p>
     </section>
-
-    <section class="vision-section">
-      <h1>Our Vision</h1>
-      <p>To be the leading educational platform that nurtures future leaders and change-makers across the globe.</p>
+    <section id="vision" class="vision-section">
+      <h2>Vision</h2>
+      <p>Your company vision statement here.</p>
     </section>
-
-    <section class="team-section">
-      <h1>Management Team</h1>
-      <p>Our management team comprises experienced educators and industry professionals who are passionate about making a difference in education.</p>
-      <!-- Add team member profiles here -->
+    <section id="team" class="team-section">
+      <h2>Our Team</h2>
+      <div class="team-member">
+        <img src="path-to-image.jpg" alt="Team Member Name">
+        <h3>Team Member Name</h3>
+        <p>Position or short bio.</p>
+      </div>
+      <!-- Repeat for other team members -->
     </section>
-
-    <section class="partners-section">
-      <h1>Our Partners</h1>
-      <p>We collaborate with various educational institutions, tech companies, and non-profit organizations to enhance the learning experience.</p>
-      <!-- Add partner logos and descriptions here -->
+    <section id="partners" class="partners-section">
+      <h2>Our Partners</h2>
+      <p>Information about partners or associated organizations.</p>
     </section>
   </div>
-
   <footer>
-    <p>EduVision © 2024</p>
+    <p>© 2024 Your Company Name</p>
   </footer>
 </body>
 </html>
